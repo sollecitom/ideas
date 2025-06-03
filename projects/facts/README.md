@@ -71,7 +71,7 @@ In no particular oder:
     3. Facts are pretty idempotent on their own, as they are immutable and fully defined by their fields.
     4. Keyed routing means that facts should be routed for processing to processors based on their key.
     5. A fact key is a business attribute that groups facts based on their ordered processing requirements.
-        1. A bank must process transactions in order, within a bank account, or otherwise end up making wrong decisions.
+        1. A bank must process transactions in order, within a bank account, or otherwise ends up making wrong decisions.
         2. In this case, the various transactions modelled as facts would be keyed based on the account they are relevant to.
     6. It's imperative that all facts keyed with a key are uniquely processed by the same physical instance of a fact processor (in general, processors can scale in terms of number of instances).
     7. Multi-keyed facts should be supported (there are multiple potential solutions, to be discussed).
@@ -99,7 +99,7 @@ In no particular oder:
 
 10. Scalability.
     1. The system should scale horizontally to support large-scale deployments with sustained throughput of commands, queries, and events.
-    2. The tool should be an option for a large retain bank with tens of millions of users, each initiating invocations tens of times a day.
+    2. The tool should be an option for a large retail bank with tens of millions of users, each initiating invocations tens of times a day.
 
 ## Notes/Thoughts
 
